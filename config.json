@@ -1,0 +1,37 @@
+{
+  "motor": {
+    "R": 6.21,
+    "L": 0.164,
+    "Ke": 0.0234,
+    "Kt": 0.0234,
+    "J": 2.31e-5,
+    "b": 2.63e-5,
+    "Tl": 0.0,
+    "Tc": 0.0
+  },
+  "simulation": {
+    "omega0": 0.0,
+    "i0": 0.0,
+    "V": 24.0,
+    "t_end": 10.0,
+    "dt": 0.02,
+    "method": "rk4"
+  },
+  "control": {
+    "mode": "closed",
+    "controller": "pid",
+    "setpoint": 104.72,
+    "pid": {
+      "form": "paper",
+      "structure": "pid",
+      "gain_set": "paper_p_fs50",
+      "T": 0.02
+    },
+    "state_feedback": {
+      "gain_set": "paper_case2"
+    },
+    "u_min": -24.0,
+    "u_max": 24.0,
+    "u0": 0.0
+  }
+}
