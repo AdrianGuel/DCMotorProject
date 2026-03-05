@@ -5,5 +5,6 @@ __pycache__/
 *.mat
 *.h5
 *.log
+*.html
 .venv/
 .env
